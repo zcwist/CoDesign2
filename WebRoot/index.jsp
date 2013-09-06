@@ -18,9 +18,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<script type="text/javascript">
+		var obj={
+		s:"这是允许的"
+		};
+		console.log(obj.s);
+		
+	</script>
+	
+	<!-- Ext相关包 -->
+	<link rel="stylesheet" type="text/css" href="Ext/resources/css/ext-all.css"/>
+	<script type="text/javascript" src="Ext/bootstrap.js"></script>
+	
+	
   </head>
   
   <body>
-    This is my JSP page. <br>
+  	<script type="text/javascript">
+  		Ext.onReady(function(){
+  			//Ext.create('Ext.Viewport',{
+  				new Ext.Viewport({
+  					layout:'fit',
+  					item:[{
+		  				xtype:"panel",
+		  				title:"welcome",
+		  				html:"<h1 style='text-align:center; font-size:60px;font-weight:bold;'>Hello World</h1>"
+		  				}]
+  			});
+  		})
+  	</script>
+
   </body>
 </html>
