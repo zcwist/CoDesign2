@@ -18,35 +18,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-	<script type="text/javascript">
-		var obj={
-		s:"这是允许的"
-		};
-		console.log(obj.s);
-		
-	</script>
 	
 	<!-- Ext相关包 -->
-	<link rel="stylesheet" type="text/css" href="Ext/resources/css/ext-all.css"/>
-	<script type="text/javascript" src="Ext/bootstrap.js"></script>
-	
+	<script src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all.js"></script>
+    <link rel="stylesheet" href="http://cdn.sencha.com/ext/gpl/4.2.1/resources/ext-theme-classic/ext-theme-classic-all.css">
+    <script type="text/javascript" src="Ext/CoDesign/HelloWorld.js"></script>
 	
   </head>
   
   <body>
-  	<script type="text/javascript">
-  		Ext.onReady(function(){
-  			//Ext.create('Ext.Viewport',{
-  				new Ext.Viewport({
-  					layout:'fit',
-  					item:[{
-		  				xtype:"panel",
-		  				title:"welcome",
-		  				html:"<h1 style='text-align:center; font-size:60px;font-weight:bold;'>Hello World</h1>"
-		  				}]
-  			});
-  		})
-  	</script>
+  	
 
   </body>
 </html>
